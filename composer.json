@@ -1,0 +1,34 @@
+{
+    "name": "magice/clientuser-bundle",
+    "type": "symfony-bundle",
+    "description": "Client user for MagiceUserBundle",
+    "homepage": "https://github.com/Joypricecorp/MagiceClientUserBundle",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "ツ Liverbool",
+            "email": "nukboon@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "Magice\\Bundle\\ClientUserBundle\\": ""
+        }
+    },
+
+    "target-dir": "Magice/Bundle/ClientUserBundle",
+
+    "minimum-stability": "dev",
+
+    "require": {
+        "php": ">=5.3.3",
+        "hwi/oauth-bundle": "0.4.*@dev",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
+    },
+
+    "require-dev": {
+        "liil/kint": "dev-master"
+    }
+}

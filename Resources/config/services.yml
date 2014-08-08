@@ -1,0 +1,11 @@
+parameters:
+    magice.client.user.class.user.entity: Magice\Bundle\ClientUserBundle\Entity\User
+    magice.client.user.class.user.provider: Magice\Bundle\ClientUserBundle\Entity\FOSUBUserProvider
+    magice.client.user.class.user.response: Magice\Bundle\ClientUserBundle\Response\UserResponse
+    magice.client.uesr.already_logedin_redirect_target: /
+    #magice.client.uesr.register_url:
+
+services:
+    mg.client.user.provider:
+        class: %magice.client.user.class.user.provider%
+        arguments: [@fos_user.user_manager, {joyprice: joypriceId}]

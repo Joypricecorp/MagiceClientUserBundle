@@ -1,0 +1,21 @@
+magice_client_user_homepage:
+    path:     /
+    defaults: { _controller: MagiceClientUserBundle:Default:index }
+
+magice_client_user_logout:
+    path:   /logout
+
+magice_client_user_login:
+    defaults: { _controller: MagiceClientUserBundle:Default:login }
+    path:   /login
+
+magice_client_user_register:
+    defaults: { _controller: MagiceClientUserBundle:Default:register }
+    path:   /register
+
+magice_client_user_connect:
+    defaults: { _controller: HWIOAuthBundle:Connect:redirectToService }
+    pattern:   "/connect/{service}"
+
+magice_client_user_connect_joyprice:
+    pattern: /login/joyprice

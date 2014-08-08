@@ -1,0 +1,19 @@
+Magice\Bundle\ClientUserBundle\Entity\User:
+    type: entity
+    table: mg_user
+    id:
+        id:
+            id: true
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        joypriceId:
+            type: integer
+            unique: true
+
+        joypriceAccessToken:
+            type: string
+            length: 255
+
+    lifecycleCallbacks: {  }
