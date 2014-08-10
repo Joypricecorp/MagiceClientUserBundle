@@ -14,9 +14,11 @@ Magice\Bundle\ClientUserBundle\Entity\User:
         joypriceId:
             type: integer
             unique: true
+            column: joyprice_id
 
         joypriceAccessToken:
             type: string
             length: 255
+            column: joyprice_access_token
 
     lifecycleCallbacks: {  }
