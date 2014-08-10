@@ -1,6 +1,9 @@
 Magice\Bundle\ClientUserBundle\Entity\User:
     type: entity
     table: mg_user
+    indexes:
+        JOYPRICE_ID:
+            columns: [joyprice_id]
     id:
         id:
             id: true
